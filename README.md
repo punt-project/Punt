@@ -13,9 +13,9 @@ What is Punt?
 ----------------
 
 Punt (IEP) is a version of Litecoin using scrypt as a proof-of-work algorithm.
- - 32 seconds block targets
+ - 32 second block targets
  - ~4.4 billion total coins
- - 1916 coins per block
+ - initially 1916 coins per block
  - Difficulty Retarget: Every block using Kimoto's gravity well.
 
 For more information, as well as an immediately useable, binary version of
