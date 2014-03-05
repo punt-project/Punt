@@ -6,7 +6,7 @@
 - Cleanup of SSE2 scrypt detection.
 
 - Minor fixes:
-  - s/Bitcoin/Reddcoin/ in the Coin Control example
+  - s/Bitcoin/Punt/ in the Coin Control example
   - Fix custom build on MacOS X 10.9
   - Fix QT5 custom build
   - Update Debian build instructions
@@ -25,7 +25,7 @@
 
 - Peers older than protocol version 70002 are disconnected.  0.8.3.7 is the oldest compatible client.
 
-- Internal miner added back to Reddcoin.  setgenerate now works, although it is generally a bad idea as it is significantly slower than external CPU miners.
+- Internal miner added back to Punt.  setgenerate now works, although it is generally a bad idea as it is significantly slower than external CPU miners.
 
 - New RPC commands: getbestblockhash and verifychain
 
@@ -50,13 +50,13 @@
 
 Workaround negative version numbers serialization bug.
 
-Fix out-of-bounds check (Reddcoin currently does not use this codepath, but we apply this
+Fix out-of-bounds check (Punt currently does not use this codepath, but we apply this
 patch just to match Bitcoin 0.8.5.)
 
 0.8.4.1 changes
 ===============
 
-CVE-2013-5700 Bloom: filter crash issue - Reddcoin 0.8.3.7 disabled bloom by default so was 
+CVE-2013-5700 Bloom: filter crash issue - Punt 0.8.3.7 disabled bloom by default so was 
 unaffected by this issue, but we include their patches anyway just in case folks want to 
 enable bloomfilter=1.
 
@@ -67,7 +67,7 @@ CVE-2013-4627: Better fix for the fill-memory-with-orphaned-tx attack
 Fix multi-block reorg transaction resurrection.
 
 Fix non-standard disconnected transactions causing mempool orphans.  This bug could cause 
-nodes running with the -debug flag to crash, although it was lot less likely on Reddcoin 
+nodes running with the -debug flag to crash, although it was lot less likely on Punt 
 as we disabled IsDust() in 0.8.3.x.
 
 Mac OSX: use 'FD_FULLSYNC' with LevelDB, which will (hopefully!) prevent the database 

@@ -1,9 +1,9 @@
-Building Reddcoin
+Building Punt
 
-See doc/readme-qt.rst for instructions on building Reddcoin-Qt,
+See doc/readme-qt.rst for instructions on building Punt-Qt,
 the intended-for-end-users, nice-graphical-interface, reference
-implementation of Reddcoin.
+implementation of Punt.
 
-See doc/build-*.txt for instructions on building reddcoind,
+See doc/build-*.txt for instructions on building puntd,
 the intended-for-services, no-graphical-interface, reference
-implementation of Reddcoin.
+implementation of Punt.

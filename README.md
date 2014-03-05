@@ -1,17 +1,17 @@
-Reddcoin integration/staging tree
+Punt integration/staging tree
 ================================
 
-http://www.reddcoin.com
+http://www.punt.com
 
 Copyright (c) 2009-2013 Bitcoin Developers
 Copyright (c) 2011-2013 Litecoin Developers
-Copyright (c) 2013-2014 Reddcoin Developers
+Copyright (c) 2013-2014 Punt Developers
 
 
-What is Reddcoin?
+What is Punt?
 ----------------
 
-Reddcoin is a version os Litecoin using scrypt as a proof-of-work algorithm.
+Punt is a version os Litecoin using scrypt as a proof-of-work algorithm.
  - 1 minute block targets
  - subsidy halves in 500,000 blocks
  - ~109 billions total coins
@@ -19,12 +19,12 @@ Reddcoin is a version os Litecoin using scrypt as a proof-of-work algorithm.
  - Difficulty Retarget: Every block using Kimoto's gravity well.
 
 For more information, as well as an immediately useable, binary version of
-the Reddcoin client sofware, see http://www.reddcoin.com.
+the Punt client sofware, see http://www.punt.com.
 
 License
 -------
 
-Reddcoin is released under the terms of the MIT license. See `COPYING` for more
+Punt is released under the terms of the MIT license. See `COPYING` for more
 information or see http://opensource.org/licenses/MIT.
 
 Development process
@@ -33,7 +33,7 @@ Development process
 Developers work in their own trees, then submit pull requests when they think
 their feature or bug fix is ready.
 
-If it is a simple/trivial/non-controversial change, then one of the Reddcoin
+If it is a simple/trivial/non-controversial change, then one of the Punt
 development team members simply pulls it.
 
 The patch will be accepted if there is broad consensus that it is a good thing.
@@ -42,8 +42,8 @@ match the project's coding conventions (see `doc/coding.txt`) or are
 controversial.
 
 The `master` branch is regularly built and tested, but is not guaranteed to be
-completely stable. [Tags](https://github.com/reddcoin/reddcoin) are created
-regularly to indicate new official, stable release versions of Reddcoin.
+completely stable. [Tags](https://github.com/punt/punt) are created
+regularly to indicate new official, stable release versions of Punt.
 
 Testing
 -------

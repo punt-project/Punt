@@ -4,12 +4,12 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About Reddcoin</source>
+        <source>About Punt</source>
         <translation>關於蝸牛幣</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;Reddcoin&lt;/b&gt; version</source>
+        <source>&lt;b&gt;Punt&lt;/b&gt; version</source>
         <translation>&lt;b&gt;蝸牛幣&lt;/b&gt;版本</translation>
     </message>
     <message>
@@ -34,7 +34,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+0"/>
-        <source>The Reddcoin developers</source>
+        <source>The Punt developers</source>
         <translation>蝸牛幣開發人員</translation>
     </message>
 </context>
@@ -67,7 +67,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location filename="../addressbookpage.cpp" line="+63"/>
-        <source>These are your Reddcoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <source>These are your Punt addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
         <translation>這些是你用來收款的蝸牛幣位址. 你可以提供不同的位址給不同的付款人, 來追蹤是誰支付給你.</translation>
     </message>
     <message>
@@ -82,7 +82,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+11"/>
-        <source>Sign a message to prove you own a Reddcoin address</source>
+        <source>Sign a message to prove you own a Punt address</source>
         <translation>簽署訊息是用來證明蝸牛幣位址是你的</translation>
     </message>
     <message>
@@ -107,7 +107,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-44"/>
-        <source>Verify a message to ensure it was signed with a specified Reddcoin address</source>
+        <source>Verify a message to ensure it was signed with a specified Punt address</source>
         <translation>驗證訊息是用來確認訊息是用指定的蝸牛幣位址簽署的</translation>
     </message>
     <message>
@@ -122,7 +122,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location filename="../addressbookpage.cpp" line="-5"/>
-        <source>These are your Reddcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your Punt addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>這是你用來付款的蝸牛幣位址. 在付錢之前, 務必要檢查金額和收款位址是否正確.</translation>
     </message>
     <message>
@@ -248,7 +248,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+1"/>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR REDDCOINS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR PUNTS&lt;/b&gt;!</source>
         <translation>警告: 如果將錢包加密後忘記密碼, 你會&lt;b&gt;失去其中所有的蝸牛幣&lt;/b&gt;!</translation>
     </message>
     <message>
@@ -275,7 +275,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-56"/>
-        <source>Reddcoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your reddcoins from being stolen by malware infecting your computer.</source>
+        <source>Punt will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your punts from being stolen by malware infecting your computer.</source>
         <translation>蝸牛幣現在要關閉以完成加密程序. 請記住, 加密錢包無法完全防止入侵電腦的惡意程式偷取你的蝸牛幣.</translation>
     </message>
     <message>
@@ -374,7 +374,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+4"/>
-        <source>Show information about Reddcoin</source>
+        <source>Show information about Punt</source>
         <translation>顯示蝸牛幣相關資訊</translation>
     </message>
     <message>
@@ -419,12 +419,12 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-347"/>
-        <source>Send coins to a Reddcoin address</source>
+        <source>Send coins to a Punt address</source>
         <translation>付錢到蝸牛幣位址</translation>
     </message>
     <message>
         <location line="+49"/>
-        <source>Modify configuration options for Reddcoin</source>
+        <source>Modify configuration options for Punt</source>
         <translation>修改蝸牛幣的設定選項</translation>
     </message>
     <message>
@@ -455,7 +455,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="-165"/>
         <location line="+530"/>
-        <source>Reddcoin</source>
+        <source>Punt</source>
         <translation>蝸牛幣</translation>
     </message>
     <message>
@@ -480,7 +480,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+22"/>
-        <source>&amp;About Reddcoin</source>
+        <source>&amp;About Punt</source>
         <translation>關於蝸牛幣</translation>
     </message>
     <message>
@@ -500,12 +500,12 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+7"/>
-        <source>Sign messages with your Reddcoin addresses to prove you own them</source>
+        <source>Sign messages with your Punt addresses to prove you own them</source>
         <translation>用蝸牛幣位址簽署訊息來證明那是你的</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Verify messages to ensure they were signed with specified Reddcoin addresses</source>
+        <source>Verify messages to ensure they were signed with specified Punt addresses</source>
         <translation>驗證訊息來確認是用指定的蝸牛幣位址簽署的</translation>
     </message>
     <message>
@@ -536,12 +536,12 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+47"/>
-        <source>Reddcoin client</source>
+        <source>Punt client</source>
         <translation>蝸牛幣客戶端軟體</translation>
     </message>
     <message numerus="yes">
         <location line="+141"/>
-        <source>%n active connection(s) to Reddcoin network</source>
+        <source>%n active connection(s) to Punt network</source>
         <translation><numerusform>與蝸牛幣網路有 %n 個連線在使用中</numerusform></translation>
     </message>
     <message>
@@ -655,7 +655,7 @@ Address: %4
     <message>
         <location line="-23"/>
         <location line="+23"/>
-        <source>URI can not be parsed! This can be caused by an invalid Reddcoin address or malformed URI parameters.</source>
+        <source>URI can not be parsed! This can be caused by an invalid Punt address or malformed URI parameters.</source>
         <translation>無法解析 URI! 也許蝸牛幣位址無效或 URI 參數有誤.</translation>
     </message>
     <message>
@@ -670,7 +670,7 @@ Address: %4
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="+111"/>
-        <source>A fatal error occurred. Reddcoin can no longer continue safely and will quit.</source>
+        <source>A fatal error occurred. Punt can no longer continue safely and will quit.</source>
         <translation>發生了致命的錯誤. 蝸牛幣程式無法再繼續安全執行, 只好結束.</translation>
     </message>
 </context>
@@ -736,7 +736,7 @@ Address: %4
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid Reddcoin address.</source>
+        <source>The entered address &quot;%1&quot; is not a valid Punt address.</source>
         <translation>輸入的位址 &quot;%1&quot; 並不是有效的蝸牛幣位址.</translation>
     </message>
     <message>
@@ -755,7 +755,7 @@ Address: %4
     <message>
         <location filename="../guiutil.cpp" line="+424"/>
         <location line="+12"/>
-        <source>Reddcoin-Qt</source>
+        <source>Punt-Qt</source>
         <translation>蝸牛幣-Qt</translation>
     </message>
     <message>
@@ -819,12 +819,12 @@ Address: %4
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start Reddcoin after logging in to the system.</source>
+        <source>Automatically start Punt after logging in to the system.</source>
         <translation>在登入系統後自動啓動蝸牛幣.</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start Reddcoin on system login</source>
+        <source>&amp;Start Punt on system login</source>
         <translation>系統登入時啟動蝸牛幣</translation>
     </message>
     <message>
@@ -844,8 +844,8 @@ Address: %4
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the Reddcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>自動在路由器上開啟 Reddcoin 的客戶端通訊埠. 只有在你的路由器支援 UPnP 且開啟時才有作用.</translation>
+        <source>Automatically open the Punt client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>自動在路由器上開啟 Punt 的客戶端通訊埠. 只有在你的路由器支援 UPnP 且開啟時才有作用.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -854,7 +854,7 @@ Address: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Connect to the Reddcoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
+        <source>Connect to the Punt network through a SOCKS proxy (e.g. when connecting through Tor).</source>
         <translation>透過 SOCKS 代理伺服器連線至蝸牛幣網路 (比如說要透過 Tor 連線).</translation>
     </message>
     <message>
@@ -929,7 +929,7 @@ Address: %4
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting Reddcoin.</source>
+        <source>The user interface language can be set here. This setting will take effect after restarting Punt.</source>
         <translation>可以在這裡設定使用者介面的語言. 這個設定在蝸牛幣程式重啓後才會生效.</translation>
     </message>
     <message>
@@ -944,7 +944,7 @@ Address: %4
     </message>
     <message>
         <location line="+9"/>
-        <source>Whether to show Reddcoin addresses in the transaction list or not.</source>
+        <source>Whether to show Punt addresses in the transaction list or not.</source>
         <translation>是否要在交易列表中顯示蝸牛幣位址.</translation>
     </message>
     <message>
@@ -996,7 +996,7 @@ Address: %4
     <message>
         <location line="-9"/>
         <location line="+9"/>
-        <source>This setting will take effect after restarting Reddcoin.</source>
+        <source>This setting will take effect after restarting Punt.</source>
         <translation>這個設定會在蝸牛幣程式重啓後生效.</translation>
     </message>
     <message>
@@ -1015,7 +1015,7 @@ Address: %4
     <message>
         <location line="+50"/>
         <location line="+166"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Reddcoin network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Punt network after a connection is established, but this process has not completed yet.</source>
         <translation>顯示的資訊可能是過期的. 與蝸牛幣網路的連線建立後, 你的錢包會自動和網路同步, 但這個步驟還沒完成.</translation>
     </message>
     <message>
@@ -1069,8 +1069,8 @@ Address: %4
     <name>PaymentServer</name>
     <message>
         <location filename="../paymentserver.cpp" line="+107"/>
-        <source>Cannot start reddcoin: click-to-pay handler</source>
-        <translation>無法啟動 reddcoin 隨按隨付處理器</translation>
+        <source>Cannot start punt: click-to-pay handler</source>
+        <translation>無法啟動 punt 隨按隨付處理器</translation>
     </message>
 </context>
 <context>
@@ -1219,7 +1219,7 @@ Address: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Show the Reddcoin-Qt help message to get a list with possible Reddcoin command-line options.</source>
+        <source>Show the Punt-Qt help message to get a list with possible Punt command-line options.</source>
         <translation>顯示蝸牛幣-Qt的求助訊息, 來取得可用的命令列選項列表.</translation>
     </message>
     <message>
@@ -1239,12 +1239,12 @@ Address: %4
     </message>
     <message>
         <location line="-104"/>
-        <source>Reddcoin - Debug window</source>
+        <source>Punt - Debug window</source>
         <translation>蝸牛幣 - 除錯視窗</translation>
     </message>
     <message>
         <location line="+25"/>
-        <source>Reddcoin Core</source>
+        <source>Punt Core</source>
         <translation>蝸牛幣核心</translation>
     </message>
     <message>
@@ -1254,7 +1254,7 @@ Address: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the Reddcoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <source>Open the Punt debug log file from the current data directory. This can take a few seconds for large log files.</source>
         <translation>從目前的資料目錄下開啓蝸牛幣的除錯紀錄檔. 當紀錄檔很大時可能要花好幾秒的時間.</translation>
     </message>
     <message>
@@ -1264,7 +1264,7 @@ Address: %4
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="-30"/>
-        <source>Welcome to the Reddcoin RPC console.</source>
+        <source>Welcome to the Punt RPC console.</source>
         <translation>歡迎使用蝸牛幣 RPC 主控台.</translation>
     </message>
     <message>
@@ -1448,7 +1448,7 @@ Address: %4
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a Reddcoin address (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
+        <source>Enter a Punt address (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
         <translation>輸入蝸牛幣位址 (比如說 Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</translation>
     </message>
 </context>
@@ -1513,7 +1513,7 @@ Address: %4
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this Reddcoin address</source>
+        <source>Sign the message to prove you own this Punt address</source>
         <translation>簽署訊息是用來證明這個蝸牛幣位址是你的</translation>
     </message>
     <message>
@@ -1549,7 +1549,7 @@ Address: %4
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified Reddcoin address</source>
+        <source>Verify the message to ensure it was signed with the specified Punt address</source>
         <translation>驗證訊息是用來確認訊息是用指定的蝸牛幣位址簽署的</translation>
     </message>
     <message>
@@ -1565,7 +1565,7 @@ Address: %4
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a Reddcoin address (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
+        <source>Enter a Punt address (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
         <translation>輸入蝸牛幣位址 (比如說 Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</translation>
     </message>
     <message>
@@ -1575,7 +1575,7 @@ Address: %4
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter Reddcoin signature</source>
+        <source>Enter Punt signature</source>
         <translation>輸入蝸牛幣簽章</translation>
     </message>
     <message>
@@ -1649,7 +1649,7 @@ Address: %4
     <name>SplashScreen</name>
     <message>
         <location filename="../splashscreen.cpp" line="+22"/>
-        <source>The Reddcoin developers</source>
+        <source>The Punt developers</source>
         <translation>蝸牛幣開發人員</translation>
     </message>
     <message>
@@ -2187,7 +2187,7 @@ Address: %4
     <name>bitcoin-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+94"/>
-        <source>Reddcoin version</source>
+        <source>Punt version</source>
         <translation>蝸牛幣版本</translation>
     </message>
     <message>
@@ -2197,8 +2197,8 @@ Address: %4
     </message>
     <message>
         <location line="-29"/>
-        <source>Send command to -server or reddcoind</source>
-        <translation>送指令給 -server 或 reddcoind
+        <source>Send command to -server or puntd</source>
+        <translation>送指令給 -server 或 puntd
 </translation>
     </message>
     <message>
@@ -2221,14 +2221,14 @@ Address: %4
     </message>
     <message>
         <location line="+24"/>
-        <source>Specify configuration file (default: reddcoin.conf)</source>
-        <translation>指定設定檔 (預設: reddcoin.conf)
+        <source>Specify configuration file (default: punt.conf)</source>
+        <translation>指定設定檔 (預設: punt.conf)
 </translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Specify pid file (default: reddcoind.pid)</source>
-        <translation>指定行程識別碼檔案 (預設: reddcoind.pid)
+        <source>Specify pid file (default: puntd.pid)</source>
+        <translation>指定行程識別碼檔案 (預設: puntd.pid)
 </translation>
     </message>
     <message>
@@ -2309,25 +2309,25 @@ Address: %4
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=reddcoinrpc
+rpcuser=puntrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;Reddcoin Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;Punt Alert&quot; admin@foo.com
 </source>
         <translation>%s, 你必須要在以下設定檔中設定 RPC 密碼(rpcpassword):
 %s
 建議你使用以下隨機產生的密碼:
-rpcuser=reddcoinrpc
+rpcuser=puntrpc
 rpcpassword=%s
 (你不用記住這個密碼)
 使用者名稱(rpcuser)和密碼(rpcpassword)不可以相同!
 如果設定檔還不存在, 請在新增時, 設定檔案權限為&quot;只有主人才能讀取&quot;.
 也建議你設定警示通知, 發生問題時你才會被通知到;
 比如說設定為:
-alertnotify=echo %%s | mail -s &quot;Reddcoin Alert&quot; admin@foo.com
+alertnotify=echo %%s | mail -s &quot;Punt Alert&quot; admin@foo.com
 </translation>
     </message>
     <message>
@@ -2342,7 +2342,7 @@ alertnotify=echo %%s | mail -s &quot;Reddcoin Alert&quot; admin@foo.com
     </message>
     <message>
         <location line="+3"/>
-        <source>Cannot obtain a lock on data directory %s. Reddcoin is probably already running.</source>
+        <source>Cannot obtain a lock on data directory %s. Punt is probably already running.</source>
         <translation>無法鎖定資料目錄 %s. 也許蝸牛幣已經在執行了.</translation>
     </message>
     <message>
@@ -2387,7 +2387,7 @@ alertnotify=echo %%s | mail -s &quot;Reddcoin Alert&quot; admin@foo.com
     </message>
     <message>
         <location line="+3"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Reddcoin will not work properly.</source>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Punt will not work properly.</source>
         <translation>警告: 請檢查電腦時間與日期是否正確! 蝸牛幣無法在時鐘不準的情況下正常運作.</translation>
     </message>
     <message>
@@ -2637,8 +2637,8 @@ alertnotify=echo %%s | mail -s &quot;Reddcoin Alert&quot; admin@foo.com
     </message>
     <message>
         <location line="+5"/>
-        <source>SSL options: (see the Reddcoin Wiki for SSL setup instructions)</source>
-        <translation>SSL 選項: (SSL 設定程序請見 Reddcoin Wiki)</translation>
+        <source>SSL options: (see the Punt Wiki for SSL setup instructions)</source>
+        <translation>SSL 選項: (SSL 設定程序請見 Punt Wiki)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2834,12 +2834,12 @@ alertnotify=echo %%s | mail -s &quot;Reddcoin Alert&quot; admin@foo.com
     </message>
     <message>
         <location line="+1"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of Reddcoin</source>
-        <translation>載入檔案 wallet.dat 失敗: 此錢包需要新版的 Reddcoin</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Punt</source>
+        <translation>載入檔案 wallet.dat 失敗: 此錢包需要新版的 Punt</translation>
     </message>
     <message>
         <location line="+93"/>
-        <source>Wallet needed to be rewritten: restart Reddcoin to complete</source>
+        <source>Wallet needed to be rewritten: restart Punt to complete</source>
         <translation>錢包需要重寫: 請重啟蝸牛幣來完成</translation>
     </message>
     <message>
@@ -2899,7 +2899,7 @@ alertnotify=echo %%s | mail -s &quot;Reddcoin Alert&quot; admin@foo.com
     </message>
     <message>
         <location line="-25"/>
-        <source>Unable to bind to %s on this computer. Reddcoin is probably already running.</source>
+        <source>Unable to bind to %s on this computer. Punt is probably already running.</source>
         <translation>無法和這台電腦上的 %s 繫結. 也許蝸牛幣已經在執行了.</translation>
     </message>
     <message>

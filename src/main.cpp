@@ -32,7 +32,7 @@ unsigned int nTransactionsUpdated = 0;
 
 map<uint256, CBlockIndex*> mapBlockIndex;
 uint256 hashGenesisBlock("0xb868e0d95a3c3c0e0dadc67ee587aaf9dc8acbf99e3b4b3110fad4eb74c1decc");
-static CBigNum bnProofOfWorkLimit(~uint256(0) >> 20); // Reddcoin: starting difficulty is 1 / 2^12
+static CBigNum bnProofOfWorkLimit(~uint256(0) >> 20); // Punt: starting difficulty is 1 / 2^12
 CBlockIndex* pindexGenesisBlock = NULL;
 int nBestHeight = -1;
 uint256 nBestChainWork = 0;
@@ -64,7 +64,7 @@ map<uint256, set<uint256> > mapOrphanTransactionsByPrev;
 // Constant stuff for coinbase transactions we create:
 CScript COINBASE_FLAGS;
 
-const string strMessageMagic = "Reddcoin Signed Message:\n";
+const string strMessageMagic = "Punt Signed Message:\n";
 
 double dHashesPerSec = 0.0;
 int64 nHPSTimerStart = 0;
@@ -355,7 +355,7 @@ unsigned int LimitOrphanTxSize(unsigned int nMaxOrphans)
 
 bool CTxOut::IsDust() const
 {
-    // Reddcoin: IsDust() detection disabled, allows any valid dust to be relayed.
+    // Punt: IsDust() detection disabled, allows any valid dust to be relayed.
     // The fees imposed on each dust txo is considered sufficient spam deterrant. 
     return false;
 }
@@ -612,7 +612,7 @@ int64 CTransaction::GetMinFee(unsigned int nBlockSize, bool fAllowFree,
             nMinFee = 0;
     }
 
-    // Reddcoin
+    // Punt
     // To limit dust spam, add nBaseFee for each output less than DUST_SOFT_LIMIT
     BOOST_FOREACH(const CTxOut& txout, vout)
         if (txout.nValue < DUST_SOFT_LIMIT)
@@ -1064,49 +1064,26 @@ uint256 static GetOrphanRoot(const CBlockHeader* pblock)
 int64 static GetBlockValue(int nHeight, int64 nFees)
 {
 
-        int64 nSubsidy = 100000 * COIN;
+        int64 nSubsidy = 1916 * COIN;
 
-// Bonus reward for block 20,000 - 29,999 of 150,000 coins
-
-        if(nHeight < 30000)
-        {
-                nSubsidy =  150000 * COIN;
-        }
-
-
-
-// Bonus reward for block 10,000 - 19,999 of 200,000 coins
-
-        if(nHeight < 20000)
-        {
-                nSubsidy =  200000 * COIN;
-        }
-
-// Bonus reward for block 10-9,999 of 300,000 coins
-
-        if(nHeight < 10000)
-        {
-                nSubsidy =  300000 * COIN;
-        }
-
-// Premine: First 10 block are 540,000,000 RDD (5% of the total coin)
+// Premine: First 10 block are 1,863,258,280 IEP (50% of the total coin)
 
         if(nHeight < 11)
         {
-        	nSubsidy =  545000000 * COIN;
+        	nSubsidy =  186325828 * COIN;
         }
 
 
 
     // Subsidy is cut in half every 500,000 blocks
-    nSubsidy >>= (nHeight / 500000);
+    // nSubsidy >>= (nHeight / 500000);
 
 
     return nSubsidy + nFees;
 }
 
-static const int64 nTargetTimespan = 60 * 60; // Reddcoin: Not used
-static const int64 nTargetSpacing = 60; // Reddcoin: 1 minute block
+static const int64 nTargetTimespan = 60 * 60; // Punt: Not used
+static const int64 nTargetSpacing = 32; // Punt: 32 seconds block
 static const int64 nInterval = nTargetTimespan / nTargetSpacing;
 
 //
@@ -2122,7 +2099,7 @@ bool CBlock::CheckBlock(CValidationState &state, bool fCheckPOW, bool fCheckMerk
     if (vtx.empty() || vtx.size() > MAX_BLOCK_SIZE || ::GetSerializeSize(*this, SER_NETWORK, PROTOCOL_VERSION) > MAX_BLOCK_SIZE)
         return state.DoS(100, error("CheckBlock() : size limits failed"));
 
-    // Reddcoin: Special short-term limits to avoid 10,000 BDB lock limit:
+    // Punt: Special short-term limits to avoid 10,000 BDB lock limit:
     if (GetBlockTime() < 1376568000)  // stop enforcing 15 August 2013 00:00:00
     {
         // Rule is: #unique txids referenced <= 4,500
@@ -2284,7 +2261,7 @@ bool CBlock::AcceptBlock(CValidationState &state, CDiskBlockPos *dbp)
 
 bool CBlockIndex::IsSuperMajority(int minVersion, const CBlockIndex* pstart, unsigned int nRequired, unsigned int nToCheck)
 {
-    // Reddcoin: temporarily disable v2 block lockin until we are ready for v2 transition
+    // Punt: temporarily disable v2 block lockin until we are ready for v2 transition
     return false;
     unsigned int nFound = 0;
     for (unsigned int i = 0; i < nToCheck && nFound < nRequired && pstart != NULL; i++)
@@ -2802,7 +2779,7 @@ bool InitBlockIndex() {
         //   vMerkleTree: 97ddfbbae6
 
         // Genesis block
-        const char* pszTimestamp = "January 21st 2014 was such a nice day...";
+        const char* pszTimestamp = "March 17th 2014 was such a nice day...";
         CTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
@@ -2814,13 +2791,13 @@ bool InitBlockIndex() {
         block.hashPrevBlock = 0;
         block.hashMerkleRoot = block.BuildMerkleTree();
         block.nVersion = 1;
-        block.nTime    = 1390280400;
+        block.nTime    = 1395014401;
         block.nBits    = 0x1e0ffff0;
         block.nNonce   = 222583475;
 
         if (fTestNet)
         {
-            block.nTime    = 1389917800;
+            block.nTime    = 1394031035;
             block.nNonce   = 231045249;
         }
 
@@ -3102,7 +3079,7 @@ bool static AlreadyHave(const CInv& inv)
 // The message start string is designed to be unlikely to occur in normal data.
 // The characters are rarely used upper ASCII, not valid as UTF-8, and produce
 // a large 4-byte int at any alignment.
-unsigned char pchMessageStart[4] = { 0xfb, 0xc0, 0xb6, 0xdb }; // Reddcoin: increase each by adding 2 to bitcoin's value.
+unsigned char pchMessageStart[4] = { 0xfb, 0xc0, 0xb6, 0xdb }; // Punt: increase each by adding 2 to bitcoin's value.
 
 
 void static ProcessGetData(CNode* pfrom)
@@ -4144,7 +4121,7 @@ bool SendMessages(CNode* pto, bool fSendTrickle)
 
 //////////////////////////////////////////////////////////////////////////////
 //
-// ReddcoinMiner
+// PuntMiner
 //
 
 int static FormatHashBlocks(void* pbuffer, unsigned int len)
@@ -4557,7 +4534,7 @@ bool CheckWork(CBlock* pblock, CWallet& wallet, CReserveKey& reservekey)
         return false;
 
     //// debug print
-    printf("ReddcoinMiner:\n");
+    printf("PuntMiner:\n");
     printf("proof-of-work found  \n  hash: %s  \ntarget: %s\n", hash.GetHex().c_str(), hashTarget.GetHex().c_str());
     pblock->print();
     printf("generated %s\n", FormatMoney(pblock->vtx[0].vout[0].nValue).c_str());
@@ -4566,7 +4543,7 @@ bool CheckWork(CBlock* pblock, CWallet& wallet, CReserveKey& reservekey)
     {
         LOCK(cs_main);
         if (pblock->hashPrevBlock != hashBestChain)
-            return error("ReddcoinMiner : generated block is stale");
+            return error("PuntMiner : generated block is stale");
 
         // Remove key from key pool
         reservekey.KeepKey();
@@ -4580,17 +4557,17 @@ bool CheckWork(CBlock* pblock, CWallet& wallet, CReserveKey& reservekey)
         // Process this block the same as if we had received it from another node
         CValidationState state;
         if (!ProcessBlock(state, NULL, pblock))
-            return error("ReddcoinMiner : ProcessBlock, block not accepted");
+            return error("PuntMiner : ProcessBlock, block not accepted");
     }
 
     return true;
 }
 
-void static ReddcoinMiner(CWallet *pwallet)
+void static PuntMiner(CWallet *pwallet)
 {
-    printf("ReddcoinMiner started\n");
+    printf("PuntMiner started\n");
     SetThreadPriority(THREAD_PRIORITY_LOWEST);
-    RenameThread("reddcoin-miner");
+    RenameThread("punt-miner");
 
     // Each thread has its own key and counter
     CReserveKey reservekey(pwallet);
@@ -4612,7 +4589,7 @@ void static ReddcoinMiner(CWallet *pwallet)
         CBlock *pblock = &pblocktemplate->block;
         IncrementExtraNonce(pblock, pindexPrev, nExtraNonce);
 
-        printf("Running ReddcoinMiner with %"PRIszu" transactions in block (%u bytes)\n", pblock->vtx.size(),
+        printf("Running PuntMiner with %"PRIszu" transactions in block (%u bytes)\n", pblock->vtx.size(),
                ::GetSerializeSize(*pblock, SER_NETWORK, PROTOCOL_VERSION));
 
         //
@@ -4711,7 +4688,7 @@ void static ReddcoinMiner(CWallet *pwallet)
     } }
     catch (boost::thread_interrupted)
     {
-        printf("ReddcoinMiner terminated\n");
+        printf("PuntMiner terminated\n");
         throw;
     }
 }
@@ -4736,7 +4713,7 @@ void GenerateBitcoins(bool fGenerate, CWallet* pwallet)
 
     minerThreads = new boost::thread_group();
     for (int i = 0; i < nThreads; i++)
-        minerThreads->create_thread(boost::bind(&ReddcoinMiner, pwallet));
+        minerThreads->create_thread(boost::bind(&PuntMiner, pwallet));
 }
 
 // Amount compression:

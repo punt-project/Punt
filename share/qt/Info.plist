@@ -3,7 +3,7 @@
 <plist version="0.9">
 <dict>
 	<key>CFBundleIconFile</key>
-	<string>reddcoin.icns</string>
+	<string>punt.icns</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleGetInfoString</key>
@@ -15,19 +15,19 @@
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleExecutable</key>
-	<string>Reddcoin-Qt</string>
+	<string>Punt-Qt</string>
 	<key>CFBundleIdentifier</key>
-	<string>org.reddcoin.Reddcoin-Qt</string>
+	<string>org.punt.Punt-Qt</string>
         <key>CFBundleURLTypes</key>
         <array>
           <dict>
             <key>CFBundleTypeRole</key>
             <string>Editor</string>
             <key>CFBundleURLName</key>
-            <string>org.reddcoin.ReddcoinPayment</string>
+            <string>org.punt.PuntPayment</string>
             <key>CFBundleURLSchemes</key>
             <array>
-              <string>reddcoin</string>
+              <string>punt</string>
             </array>
           </dict>
         </array>
